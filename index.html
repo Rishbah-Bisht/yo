@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="picture resource/title__logo.png" type="image/x-icon" id="v">
+</head>
+
+<body>
+    <div class="music-player">
+
+        <nav id="navBar">
+            <div id="logo"><img src="picture resource../nav-bar-logo.png" class="logo"><img src="picture resource../Name-logo.png" id="lGo"></div>
+
+            <div id="navMiddelPart">
+                <a href="index.html" id="HomeBtn"><i class="fa-solid fa-house"
+                        style="color: #ffffff;"></i></a>
+                <div id="allinputAndBTns">
+                    <input placeholder="What do you want to play?" id="searchBox" id="myinput">
+                    <button id="cross"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div>
+            </div>
+
+            <div id="logo"></div>
+        </nav>
+        <!-- Left side -->
+        <div class="mainSecyionMusicLibary">
+
+
+            <div class="playlist">
+               
+                <div id="x">
+                    <div id="left_1">Hey ! Welcome</div>
+                    <div class="left_2">
+                        <h5>This is our Music Player</h5>
+                        <span class="btn-left">Please Choose Song To Listen</span>
+                    </div>
+
+                    <div class="left_2">
+                        <h5>This is our Music Player</h5>
+                        <span class="btn-left">Please Choose Song To Listen</span>
+                    </div>
+                    <div class="left_2 left_3">
+                        
+                    </div>
+                </div>
+                <div id="playlist">
+                    <!-- Playlist will be generated dynamically -->
+
+                    <div class="head">Top Artists</div>
+                    <div class="container_">
+                        <div class="scroll-container">
+                            <div class="heading-Music-topic">
+
+                                <a class="singer-Divs search_filter" id="song2" href="/other's/Singer's html fil's/karan.html"><img
+                                        src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84117e365f4b9f06d6a25f5955"
+                                        class="Artist-div">
+                                    <div class="SongName">Karan Aujla</div>
+                                    <div class="artistName">Artist
+                                    </div>
+                                    <div class="play_btn_art"><button class="artist_btns"><i
+                                                class="fa-solid fa-play"></i></button></div>
+                                </a>
+                                <a class="singer-Divs  search_filter" id="song2" href="/other's/Singer's html fil's/arijit.html"><img
+                                        src="https://media.insider.in/image/upload/c_crop,g_custom/v1728462701/yiwwlrbe78ahhohjjmum.jpg"
+                                        class="Artist-div">
+                                    <div class="SongName">Arijit Singh</div>
+                                    <div class="artistName">Artist
+                                    </div>
+                                    <div class="play_btn_art"><button class="artist_btns"><i
+                                                class="fa-solid fa-play"></i></button></div>
+                                </a>
+                                <a class="singer-Divs search_filter " id="song2" href="/other's/Singer's html fil's/massom.html"><img
+                                        src="/other's/Singer's html fil's/1.karan/bg-pic/massom-pic.jpg" class="Artist-div">
+                                    <div class="SongName">Masoom Sharama</div>
+                                    <div class="artistName">Artist
+                                    </div>
+                                    <div class="play_btn_art"><button class="artist_btns"><i
+                                                class="fa-solid fa-play"></i></button></div>
+                                </a>
+                                <a class="singer-Divs  search_filter" id="song2" href="/other's/Singer's html fil's/sherya.html"><img
+                                    src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84f2836295d5df39844017c8a3"
+                                    class="Artist-div">
+                                <div class="SongName">Shreya Ghoshal </div>
+                                <div class="artistName">Artist
+                                </div>
+                                <div class="play_btn_art"><button class="artist_btns"><i
+                                            class="fa-solid fa-play"></i></button></div>
+                            </a>
+                                <a class="singer-Divs  search_filter" id="song2" href="/other's/Singer's html fil's/sidhu.html"><img
+                                        src="https://yt3.googleusercontent.com/ytc/AIdro_n745SwM6KfQRPkuKQqXKGfazPaPMdez0SkmDjXIaW0I90=s900-c-k-c0x00ffffff-no-rj"
+                                        class="Artist-div">
+                                    <div class="SongName">Sidhu Moosewala </div>
+                                    <div class="artistName">Artist
+                                    </div>
+                                    <div class="play_btn_art"><button class="artist_btns"><i
+                                                class="fa-solid fa-play"></i></button></div>
+                                </a>
+                                <a class="singer-Divs  search_filter" id="song2" href="/other's/Singer's html fil's/yo yo.html"><img
+                                        src="https://i.scdn.co/image/ab6761610000e5ebbc7e4fffd515b47ff1ebbc1f"
+                                        class="Artist-div">
+                                    <div class="SongName">Yo Yo Honey Singh </div>
+                                    <div class="artistName">Artist
+                                    </div>
+                                    <div class="play_btn_art"><button class="artist_btns"><i
+                                                class="fa-solid fa-play"></i></button></div>
+                                </a>
+                                
+
+                            </div>
+                        </div>
+                        <div class="slider_btns"><div class="srcol_divs_right"><button class="scroll-left">
+                                <i class="fa-solid fa-angle-right fa-rotate-180"></i></button></div></div>
+                        <div class="slider_btns2"><div class="srcol_divs_right"><button class="scroll-right">
+                                <i class="fa-solid fa-angle-right"></i></button></div></div>
+
+                    </div> 
+
+
+
+                    <div class="head">Jump back in</div>
+                    <div class="container_">
+                        <div class="scroll-container">
+                            <div class="heading-Music-topic">
+                                <div class="playlistInnerDivs search_filter " id="song2" src="/home page songs/Jaguar.mp3">
+                                    <img src="https://c.saavncdn.com/196/Jaguar-Punjabi-2015-500x500.jpg"
+                                        class="Music-imag">
+                                    <span class="play"></span>
+                                    <div class="SongName">Jaguar</div>
+                                    <div class="artistName">Bohimia, Shukie</div>
+                                    <div class="display_none">Bohimia</div>
+                                    <div class="display_none_art">Lyricist, Composer, Singer</div>
+                                    <div class="display_none_1">sukhie</div>
+                                    <div class="display_none_art_2">Rapper</div>
+                                    <div class="play_btn"><button><i class="fa-solid fa-play"></i></button></div>
+                                </div>
+
+                                <div class="playlistInnerDivs search_filter " id="song2" src="/home page songs/WAVY.mp3"><img
+                                        src="https://i.scdn.co/image/ab67616d00001e02e34f05599c4a42e1cbb1c251"
+                                        class="Music-imag">
+                                    <div class="SongName">Wavy</div>
+                                    <div class="artistName">Karan Aulja ,Mrxci</div>
+                                    <div class="display_none">karan Aulja</div>
+                                    <div class="display_none_art">Lyricist, Composer, Singer</div>
+                                    <div class="display_none_1">Mrxci</div>
+                                    <div class="display_none_art_2">Rapper</div>
+                                    <div class="play_btn"><button><i class="fa-solid fa-play"></i></button></div>
+                                </div>
+                                <div class="playlistInnerDivs search_filter " id="song2" src="/home page songs/MILLIONAIRE.mp3"><img
+                                        src="https://c.saavncdn.com/173/GLORY-Hindi-2024-20240926151002-500x500.jpg"
+                                        class="Music-imag">
+                                    <div class="SongName">Millinore</div>
+                                    <div class="artistName">Honey Singh</div>
+                                    <div class="display_none">Honey Singh</div>
+                                    <div class="display_none_art">Singer</div>
+                                    <div class="display_none_1"></div>
+                                    <div class="display_none_art_2"></div>
+                                    <div class="play_btn"><button><i class="fa-solid fa-play"></i></button></div>
+                                </div>
+                                <div class="playlistInnerDivs search_filter " id="song2" src="/other's/Album's html file's/3. International Villager's/Dope Shope.mp3"><img
+                                        src="https://c.saavncdn.com/blob/924/International-Villager-Punjabi-2011-20220722144441-500x500.jpg"
+                                        class="Music-imag">
+                                    <div class="SongName">Dope Shope</div>
+                                    <div class="artistName">Honey Singh,Deep Money</div>
+                                    <div class="display_none">Honey Singh</div>
+                                    <div class="display_none_art">Lyricist, Composer, Singer</div>
+                                    <div class="display_none_1">Deep Money</div>
+                                    <div class="display_none_art_2">Rapper</div>
+                                    <div class="play_btn"><button><i class="fa-solid fa-play"></i></button></div>
+                                </div>
+                                <div class="playlistInnerDivs search_filter " id="song2" src="/home page songs/INTO YOU.mp3"><img
+                                        src="https://i.scdn.co/image/ab67616d0000b27321899c20e9bedffc3ce9538a"
+                                        class="Music-imag">
+                                    <div class="SongName">Into You</div>
+                                    <div class="artistName">Tegi Pannu, Manni Sandhu</div>
+                                    <div class="display_none">Tegi Pannu</div>
+                                    <div class="display_none_art">Lyricist,Singer</div>
+                                    <div class="display_none_1">Manni Sandhu</div>
+                                    <div class="display_none_art_2">Music, Composer</div>
+                                    <div class="play_btn"><button><i class="fa-solid fa-play"></i></button></div>
+                                </div>
+                                <div class="playlistInnerDivs search_filter  " id="song3" src="/other's/Album's html file's/12.High Rated GABRU/Made In India (From  Made In India ) - Guru Randhawa.m4a">
+                                  
+                                    <img class="Music-imag" src="https://c.saavncdn.com/887/Made-In-India-Punjabi-2018-20180605-500x500.jpg" alt="Album Art">
+                                    <div class="SongName">Made In India (From "Made In India")</div>
+                                    <div class="artistName">Guru Randhawa</div>
+                                    <div class="display_none">Guru Randhawa</div>
+                                    <div class="display_none_art">Singer</div>
+                                    <div class="display_none_1"></div>
+                                    <div class="display_none_art_2"></div>
+                                    <div class="play_btn"><button><i class="fa-solid fa-play"></i></button></div>
+                                </div>
+                                <div class="playlistInnerDivs search_filter " id="song2" src="/home page songs/Subhanallah - Pritam, Sreeram, Shilpa Rao.m4a"><img
+                                    src="https://i.scdn.co/image/ab67616d0000b273707ea5b8023ac77d31756ed4"
+                                    class="Music-imag">
+                                <div class="SongName">Subhanallah</div>
+                                <div class="artistName">Pritam, Sreeram,Shilpa Rao</div>
+                                <div class="display_none">Pritam</div>
+                                <div class="display_none_art">Singer, Composer , Lyricist</div>
+                                <div class="display_none_1">Shilpa Rao</div>
+                                <div class="display_none_art_2">singer</div>  
+                                <div class="play_btn"><button><i class="fa-solid fa-play"></i></button></div>
+                            </div>
+                            <div class="playlistInnerDivs search_filter " id="song2" src="/home page songs/Heartquake - Papon.m4a"><img
+                                    src="https://i.scdn.co/image/ab67616d0000b273f07f0455c6cc38f14105acfb"
+                                    class="Music-imag">
+                                <div class="SongName">Heartquake</div>
+                                <div class="artistName">Papon</div>
+                                <div class="display_none">Papon</div>
+                                <div class="display_none_art">Singer</div>
+                                <div class="display_none_1"></div>
+                                <div class="display_none_art_2"></div>  
+                                <div class="play_btn"><button><i class="fa-solid fa-play"></i></button></div>
+                            </div>
+                            <div class="playlistInnerDivs search_filter " id="song2" src="/home page songs/Laapata - King.m4a"><img
+                                    src="https://i.scdn.co/image/ab67616d0000b2732fb6667fe2da23c61487b3d0"
+                                    class="Music-imag">
+                                <div class="SongName">Laapata</div>
+                                <div class="artistName">King</div>
+                                <div class="display_none">King</div>
+                                <div class="display_none_art">Rapper</div>
+                                <div class="display_none_1"></div>
+                                <div class="display_none_art_2"></div>  
+                                <div class="play_btn"><button><i class="fa-solid fa-play"></i></button></div>
+                            </div>
+                            <div class="playlistInnerDivs search_filter " id="song2" src="/home page songs/Isq Risk - Sohail Sen, Rahat Fateh Ali Khan, Irshad Kamil.m4a"><img
+                                    src="https://c.saavncdn.com/658/Mere-Brother-Ki-Dulhan-Hindi-2011-20240916164253-500x500.jpg"
+                                    class="Music-imag">
+                                <div class="SongName">Isq Risk</div>
+                                <div class="artistName">Rahat Fateh Ali Khan</div>
+                                    <div class="display_none">Rahat Fateh Ali Khan</div>
+                                    <div class="display_none_art">Singer, Primarily Qawwali</div>
+                                    <div class="display_none_1"></div>
+                                    <div class="display_none_art_2"></div>                            
+                                
+                                <div class="play_btn"><button><i class="fa-solid fa-play"></i></button></div>
+                            </div>
+                            <div class="playlistInnerDivs search_filter display_none " id="song2" src="/home page songs/Isq Risk - Sohail Sen, Rahat Fateh Ali Khan, Irshad Kamil.m4a"><img
+                                    src="/picture resource/Screenshot 2024-12-31 062807.png"
+                                    class="Music-imag">
+                                <div class="SongName"></div>
+                                <div class="artistName"></div>
+                                    <div class="display_none"></div>
+                                    <div class="display_none_art"></div>
+                                    <div class="display_none_1"></div>
+                                    <div class="display_none_art_2"></div>                            
+                                
+                                <div class="play_btn"><button><i class="fa-solid fa-play"></i></button></div>
+                            </div>
+                            
+                            </div>
+                        </div>
+                        <div class="slider_btns"><div class="srcol_divs_right"><button class="scroll-left">
+                                <i class="fa-solid fa-angle-right fa-rotate-180"></i></button></div></div>
+                        <div class="slider_btns2"><div class="srcol_divs_right"><button class="scroll-right">
+                                <i class="fa-solid fa-angle-right"></i></button></div></div>
+
+                    </div>
+
+
+
+                    <div class="head">Top Albums</div>
+                    <div class="container_">
+                        <div class="scroll-container">
+                            <div class="heading-Music-topic">
+                                <a class="playlistInnerDivs search_filter " id="album1" href="/other's/Album's html file's/album_1.html">
+                                    <img src="https://images1.hungama.com/tr:n-a_11_m/c/1/000/739/328863/328863_800x800.jpg?version=0_2"
+                                        class="Music-imag" alt="Album Cover">
+                                    <div class="SongName">Chali Bhe Motor Chali</div>
+                                    <div class="artistName">Narendra Singh Negi</div>
+                                    <div class="play_btn2">
+                                        <button><i class="fa-solid fa-play"></i></button>
+                                    </div>
+                                </a>
+                                <a class="playlistInnerDivs search_filter " id="album1" href="/other's/Album's html file's/album_12.html">
+                                    <img src="https://i.scdn.co/image/ab67616d0000b273ef759d4ae310020a06939e99"
+                                        class="Music-imag" alt="Album Cover">
+                                    <div class="SongName">MoonChild Era</div>
+                                    <div class="artistName">Diljit Dosanjh</div>
+                                    <div class="play_btn2">
+                                        <button><i class="fa-solid fa-play"></i></button>
+                                    </div>
+                                </a>
+                                <a class="playlistInnerDivs search_filter " id="album2" href="/other's/Album's html file's/album_2.html">
+                                    <img src="https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg"
+                                        class="Music-imag" alt="Album Cover">
+                                    <div class="SongName">Making Memories</div>
+                                    <div class="artistName">Karan Aulja</div>
+                                    <div class="play_btn">
+                                        <button><i class="fa-solid fa-play"></i></button>
+                                    </div>
+                                </a> <a class="playlistInnerDivs search_filter " id="album2" href="/other's/Album's html file's/album_11.html">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg"
+                                        class="Music-imag" alt="Album Cover">
+                                    <div class="SongName">Moosetape</div>
+                                    <div class="artistName">Sishu Moosewala</div>
+                                    <div class="play_btn">
+                                        <button><i class="fa-solid fa-play"></i></button>
+                                    </div>
+                                </a>
+                                <a class="playlistInnerDivs search_filter " id="album2" href="/other's/Album's html file's/album_8.html">
+                                    <img src="https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg"
+                                        class="Music-imag" alt="Album Cover">
+                                    <div class="SongName">High Rated Gabru</div>
+                                    <div class="artistName">Guru Randhawa</div>
+                                    <div class="play_btn">
+                                        <button><i class="fa-solid fa-play"></i></button>
+                                    </div>
+                                </a>
+                                <a class="playlistInnerDivs search_filter " id="album3" href="/other's/Album's html file's/album_3.html">
+                                    <img src="https://i.scdn.co/image/ab67616d0000b273ca6243433c75d8ccfc39e3c4"
+                                        class="Music-imag" alt="Album Cover">
+                                    <div class="SongName">International Villagers</div>
+                                    <div class="artistName">Honey Singh</div>
+                                    <div class="play_btn2">
+                                        <button><i class="fa-solid fa-play"></i></button>
+                                    </div>
+                                </a>
+                                <a class="playlistInnerDivs search_filter " id="album4" href="/other's/Album's html file's/album_4.html">
+                                    <img src="https://i.scdn.co/image/ab67706f0000000285c716247c24f66ef40f011e"
+                                        class="Music-imag" alt="Album Cover">
+                                    <div class="SongName">This Is Arijit Singh</div>
+                                    <div class="artistName">Arijit Singh</div>
+                                    <div class="play_btn">
+                                        <button><i class="fa-solid fa-play"></i></button>
+                                    </div>
+                                </a>
+                                <a class="playlistInnerDivs search_filter " id="album5" href="/other's/Album's html file's/album_5.html">
+                                    <img src="https://i.scdn.co/image/ab67616d0000b273e1b3131b1ac50e16eb621103"
+                                        class="Music-imag" alt="Album Cover">
+                                    <div class="SongName">Chidiya</div>
+                                    <div class="artistName">Vilen</div>
+                                    <div class="play_btn">
+                                        <button><i class="fa-solid fa-play"></i></button>
+                                    </div>
+                                </a>
+                                <a class="playlistInnerDivs search_filter " id="album2" href="/other's/Album's html file's/album_7.html">
+                                    <img src="https://c.saavncdn.com/505/Street-Dreams-Hindi-2024-20240220085345-500x500.jpg"
+                                        class="Music-imag" alt="Album Cover">
+                                    <div class="SongName">Street Dreams</div>
+                                    <div class="artistName">Divine, Karan Aujla</div>
+                                    <div class="play_btn">
+                                        <button><i class="fa-solid fa-play"></i></button>
+                                    </div>
+                                </a>
+
+                                <a class="playlistInnerDivs search_filter " id="album2" href="/other's/Album's html file's/album_9.html">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg"
+                                        class="Music-imag" alt="Album Cover">
+                                    <div class="SongName">G.O.A.T</div>
+                                    <div class="artistName">Diljit Dosanjh</div>
+                                    <div class="play_btn">
+                                        <button><i class="fa-solid fa-play"></i></button>
+                                    </div>
+                                </a>
+                                <a class="playlistInnerDivs search_filter " id="album2" href="/other's/Album's html file's/album_14.html">
+                                    <img src="https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88"
+                                        class="Music-imag" alt="Album Cover">
+                                    <div class="SongName">Glory</div>
+                                    <div class="artistName">Yo Yo Honey Singh</div>
+                                    <div class="play_btn">
+                                        <button><i class="fa-solid fa-play"></i></button>
+                                    </div>
+                                </a>
+                               
+                            </div>
+                        </div>
+                        <div class="slider_btns"><div class="srcol_divs_right"><button class="scroll-left">
+                                <i class="fa-solid fa-angle-right fa-rotate-180"></i></button></div></div>
+                        <div class="slider_btns2"><div class="srcol_divs_right"><button class="scroll-right">
+                                <i class="fa-solid fa-angle-right"></i></button></div></div>
+                    </div>
+
+
+
+                   
+
+
+
+                    
+                    <div class="midFooter">
+                        <div class="footer-container">
+                            <!-- Company Section -->
+                            <div class="footer-column">
+                                <h4>Company</h4>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Jobs</a></li>
+                                    <li><a href="#">For the Record</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Communities Section -->
+                            <div class="footer-column">
+                                <h4>Communities</h4>
+                                <ul>
+                                    <li><a href="#">For Artists</a></li>
+                                    <li><a href="#">Developer</a></li>
+                                    <li><a href="#">Advertising</a></li>
+                                    <li><a href="#">Investor</a></li>
+                                    <li><a href="#">Vendor</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Useful Links Section -->
+                            <div class="footer-column">
+                                <h4>Useful links</h4>
+                                <ul>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#">Free Mobile App</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Gana BajaO Plans Section -->
+                            <div class="footer-column">
+                                <h4>Gana BajaO plans</h4>
+                                <ul>
+                                    <li><a href="#">Premium Individual</a></li>
+                                    <li><a href="#">Premium Duo</a></li>
+                                    <li><a href="#">Premium Family</a></li>
+                                    <li><a href="#">Premium Student</a></li>
+                                    <li><a href="#">Gana BajaO Free</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Social Icons -->
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div class="mid-div">
+                            <div class="mid-img">
+                                <div class="CreaditDiv">
+                                    <h1 id="leader">Project candidate</h1>
+
+                                    <div class="CreaditDiv">
+                                        <a href="#" class="auto_type">Aman</a>
+                                        <a href="#" class="auto_type">Sudhanshu</a>
+                                        <a href="#" class="auto_type">Rishabh</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <p>
+                                <hr><br><br>By -  Aman & Sudhanshu & Rishabh
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leftSide">
+                    
+                    <div class="allHead" id="headr_name"></div><button class="crossbtn"><i class="fa-solid fa-xmark"></i></button>
+                    <img src="/black screen.png" id="leftside">
+                    <div id="left-SongInfo">
+                        <span id="SongName-left"></span>
+                        <span id="artistName-left"></span>
+                        <span id="time-left"></span>
+                    </div>
+                    <div id="left-SongInfo2">
+                        <div class="credit_1">
+                            <h3>Credit</h3>
+                        </div>
+                        <div class="credit_3">
+                            <div class="credit_2" id="singer"></div>
+                            <div class="credit_4" id="art"></div>
+
+                        </div>
+                        <div class="credit_3">
+                            <div class="credit_2" id="singer_1"></div>
+                            <div class="credit_4" id="art_1"></div>
+
+                        </div>
+                    </div>
+                    <div class="credit_1">
+                        <h3>Next Song</h3>
+                    </div>
+
+                    <div class=" que-info ">
+
+                        <div id="songImg_q">
+                            <img src="" id="songImgDesplay_q">
+                        </div>
+                        <div id=" songNameInfo">
+                            <span id="SongName_q"></span>
+                            <span id="artistName_q"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div id="footerPart">
+            <div class="song-info">
+                <div id="songImg">
+                    <img src="" id="songImgDesplay">
+                </div>
+                <div id="songNameInfo">
+                    <span id="SongName"></span>
+                    <span id="artistName"></span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div id="btnsCntrol">
+                    <button id="prev" class="control-btn"><i class="fa-solid fa-forward fa-flip-horizontal"
+                            style="color: #ffffff;"></i></button>
+                    <button id="play" class="control-btn"><i class="fa-solid fa-play"
+                            style="color: #ffffff;"></i></button>
+                    <button id="next" class="control-btn"><i class="fa-solid fa-forward"
+                            style="color: #ffffff;"></i></button>
+                </div>
+                <div class="progress-container">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="progress-bar" class="progress-bar" value="0">
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+
+
+
+            <div class="volume-control">
+                <button id="mute" class="control-btn">
+                    <i class="fa-solid fa-volume-low" style="color: #ffffff;"></i></button>
+                <input type="range" id="volume-bar" class="volume-bar" min="0" max="1" step="0.1" value="1">
+            </div>
+        </div>
+
+
+        <audio id="audio" src=""></audio>
+    </div>
+    </div>
+    <script src="app.js">
+    </script>
+
+</body>
+
+</html>
