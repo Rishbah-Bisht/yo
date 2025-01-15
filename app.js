@@ -310,21 +310,31 @@ playlistItems.forEach((item, index) => {
         currentSongIndex = index; // Update current index
         loadSong(currentSongIndex);
         song_info.style.opacity = 1;
-        yo.style.width = '100%';
-        xo.style.display = '';
-        left_div.style.display = '';
+        
+        btnsShow.style.display = 'flex'
         leader.style.fontSize = '4rem';
         pad_1.style.paddingLeft = '20px';
         mainSecyionMusicLibary.style.height = '79%';
-        footer.style.opacity = '1';
-        // Load and play the selected song
+
     });
 
 });
 
 
 
+const btnsShow=document.querySelector('.btnsShow');
 
+btnsShow.addEventListener('click' ,()=>{
+    xo.style.display = 'none'
+    left_div.style.display = 'flex';
+    btnsShow.style.display = 'none';
+    console.log('hiii')
+    yo.style.display = ''
+    footer.style.display = 'flex';
+    footer.style.bottom = '0px';
+    console.log(footer)
+     shoeFooter.style.display = 'none'
+})
 
 
 
@@ -335,14 +345,30 @@ playlistItems.forEach((item, index) => {
 
 
 const crossbtn = document.querySelector('.crossbtn');
-
+const shoeFooter=document.querySelector('.shoeFooter');
 crossbtn.addEventListener('click', () => {
-    xo.style.width = '80%'
+    xo.style.display = 'flex'
+     yo.style.display = ''
     yo.style.width = '100%';
+    btnsShow.style.display = 'flex';
     left_div.style.display = 'none';
     leader.style.fontSize = '';
-
+    shoeFooter.style.display = ''
 })
+
+
+
+
+const searchbtn=document.querySelector('#searchbtn');
+const navMiddelPart=document.querySelector('#navMiddelPart');
+searchbtn.addEventListener('click',()=>{
+    navMiddelPart.style.display='flex';
+})
+
+xo.addEventListener('click', function () {
+    navMiddelPart.style.display='none';
+});
+
 
 
 
@@ -418,3 +444,12 @@ document.addEventListener('keypress', function (event) {
         togglePlayPause();
     }
 });
+
+
+
+const cross=document.querySelector('#cross');
+const popUp=document.querySelector('#popUp');
+cross.addEventListener('click',()=>{
+    searchBox.value='';
+    popUp.style.display='flex'
+})
