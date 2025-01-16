@@ -1,6 +1,6 @@
 * {
   margin: 0;
-font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0;
 }
 
@@ -11,15 +11,15 @@ font-family: Arial, Helvetica, sans-serif;
 .leftSide {
   width: 100%;
   height: 100%;
-  border-top-right-radius: 10px;
-  margin: 0 10px;
+  border-radius: 30px;
+  margin: 10px 0;
   background-color: #b94646;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 0px;
   align-items: flex-start;
-display: none;
+  display: none;
   overflow-y: scroll;
 
 }
@@ -48,6 +48,7 @@ display: none;
   width: 100%;
   font-size: 4rem;
   color: white;
+  margin-bottom: 50px;
   background-color: transparent;
   white-space: nowrap;
   overflow: hidden;
@@ -56,38 +57,41 @@ display: none;
 }
 
 #artistName-left {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: rgba(255, 255, 255, 0.408);
 }
 
 #left-SongInfo2 {
-  width: 90%;
+  width: 85%;
   background-color: rgb(45, 45, 45);
   margin: 50px 10px 10px 10px;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 20px;
 
 }
-#leftside{
-  width: 800px;
-  margin: 50px;
-  border-radius: 20px;
-}
-#leftSideDivePosition{
-  background-color: transparent;
+
+#leftside {
   width: 100%;
-  height:60px ;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
+  margin: 50px;
+  border-radius: 40px;
 }
 
-#leftSideDivePosition .allHead{
-  font-size: 3rem;
+#leftSideDivePosition {
+  background-color: transparent;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  margin: 50px;
+}
+
+#leftSideDivePosition .allHead {
+  font-size: 5rem;
   color: white;
 }
 
-.crossbtn{
+.crossbtn {
   width: 50px;
   height: 50px;
   font-size: 4rem;
@@ -95,8 +99,9 @@ display: none;
   border: none;
   background-color: transparent;
   color: white;
-  
+
 }
+
 .credit,
 .credit_1,
 .credit_3 {
@@ -146,7 +151,7 @@ display: none;
 .credit_1 {
   display: flex;
   justify-content: left;
-  margin: 30px  0;
+  margin: 30px 0;
   width: 90%;
 }
 
@@ -175,6 +180,7 @@ display: none;
   /* Hide any text that overflows the container */
   text-overflow: ellipsis;
 }
+
 body {
   margin: 0;
   background-color: #000000;
@@ -191,6 +197,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
+  display: none;
 }
 
 #navBar #logo {
@@ -224,7 +231,7 @@ body {
   outline: 1px solid black;
 }
 
-.HomeBtn{
+.HomeBtn {
   background-color: transparent;
   width: 160px;
   height: 160px;
@@ -236,7 +243,7 @@ body {
   border: none;
   text-decoration: none;
 }
- 
+
 
 
 
@@ -317,14 +324,14 @@ body {
 
 .album .singer-Divs,
 .search_filter {
-  height: 490px;
+  height: 500px;
   color: #333;
   background-color: #3f3c3c43;
   width: 325px;
   margin: 25px;
   border-radius: 10px;
   text-align: left;
-  padding: 20px 30px 0px 20px;
+  padding: 20px 30px;
   cursor: pointer;
   text-decoration: none;
   transition: 1s;
@@ -376,7 +383,7 @@ body {
 .song-info {
   background-color: transparent;
   border-radius: 5px;
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,9 +496,9 @@ body {
   width: 100%;
   background-color: transparent;
   height: 20px;
-display: flex;
-justify-content: center;
-margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 #current-time,
@@ -499,7 +506,7 @@ margin-top: 30px;
   position: relative;
   bottom: -5px;
   margin: 5px;
-  font-size:1.4rem;
+  font-size: 2rem;
 
 }
 
@@ -767,15 +774,15 @@ margin-top: 30px;
 
 #songImg {
   background-color: transparent;
-  margin: 0px 0px 0 0;
+  margin: 10px 0px 0 0;
 }
 
 #songImgDesplay {
   width: 120px;
   height: 120px;
   border-radius: 10px;
-margin: 0  20px ;
-display: inline-block;
+  margin: 0 20px;
+  display: inline-block;
 
 }
 
@@ -801,9 +808,10 @@ display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
- height: auto;
+  height: auto;
 }
-#artistName{
+
+#artistName {
   margin-top: 20px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.673);
@@ -828,17 +836,17 @@ display: inline-block;
   flex-wrap: wrap;
   justify-content: center;
   justify-content: left;
-  margin: 0 3px 0 0 ;
+  margin: 0 0 30px 0;
   height: auto;
 
 }
 
 .control-btn {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   background-color: #333;
   border: none;
-  font-size: 1.7rem;
+  font-size: 3rem;
   padding: 1px 0 0 0;
   color: white;
   cursor: pointer;
@@ -849,8 +857,8 @@ display: inline-block;
 
 #prev,
 #next {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   align-items: center;
   background-color: transparent;
   color: white;
@@ -863,18 +871,25 @@ display: inline-block;
 #current-time,
 #duration {
   position: relative;
-  top: -25px;
+  top: -60px;
   margin: 15px;
   font-size: 2rem;
   color: white;
 
 }
 
+#current-time {
+  left: 80px;
+}
+
+#duration {
+  right: 80px;
+}
 
 #progress-bar {
-  width:75%;
+  width: 75%;
   -webkit-appearance: none;
-  height: 4px;
+  height: 10px;
   border-radius: 10px;
   background: linear-gradient(to right, #e83147 0%, #ffffff 0%);
   outline: none;
@@ -932,11 +947,13 @@ display: inline-block;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
-.volume-control i{
+
+.volume-control i {
   font-size: 2rem;
 }
+
 .volume-bar {
   margin: 50px 0;
   width: 85%;
@@ -977,7 +994,7 @@ display: inline-block;
   flex-wrap: wrap;
   align-items: center;
   justify-content: left;
-display: none;
+  display: none;
   padding: 0 5px;
   position: sticky;
   bottom: 150px;
@@ -1101,7 +1118,7 @@ display: none;
 .que-info {
   background-color: #333;
   width: 90%;
-  border-radius: 10px;
+  border-radius: 30px;
   display: flex;
   margin-bottom: 10px;
   text-align: left;
@@ -1130,7 +1147,8 @@ display: none;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#artistName_q{
+
+#artistName_q {
   margin: 10px 0;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.655);
@@ -1198,7 +1216,6 @@ display: none;
 
 .footer-column {
   flex: 1;
-  min-width: 150px;
   background-color: transparent;
 }
 
@@ -1279,18 +1296,19 @@ display: none;
   display: none;
 }
 
-.shoeFooter{
+.shoeFooter {
   width: 100%;
   height: 170px;
-  background-color:#000000;
+  background-color: #000000;
   position: sticky;
   bottom: 0;
   display: flex;
   justify-content: space-evenly;
 }
-.btnsShow{
+
+.btnsShow {
   height: 150px;
-  background-color:#333;
+  background-color: #1a1a1a;
   position: sticky;
   bottom: 170px;
   display: none;
@@ -1298,22 +1316,28 @@ display: none;
   justify-content: center;
   padding: 0;
 }
-.footer-bottom p{
-  font-size: 1.5rem;
+
+.footer-bottom p {
+  font-size: 3rem;
 }
-.footer-column h4{
-  font-size: 1.3rem;
+
+.footer-column h4 {
+  font-size: 1.9rem;
+  margin-bottom: 40px;
 }
-.footer-column ul li a{
-  font-size: 1rem;
+
+.footer-column ul li a {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
-.footer-social{
+
+.footer-social {
   width: 100%;
 }
 
 
 
- #navMiddelPart {
+#navMiddelPart {
   display: flex;
   align-items: center;
   flex-grow: 1;
@@ -1323,9 +1347,10 @@ display: none;
   height: 110px;
   display: none;
   position: sticky;
-  top:185px;
+  top: 10px;
   z-index: 100;
 }
+
 #allinputAndBTns {
   background-color: rgb(53, 65, 65);
   display: flex;
@@ -1333,12 +1358,13 @@ display: none;
   border-radius: 10px;
   width: 100%;
 }
+
 #searchBox {
   width: 100%;
-  padding: 20px 0 10px  20px ;
+  padding: 20px 0 10px 20px;
   border: none;
   border-radius: 5px;
-  height: 70px;
+  height: 100px;
   background-color: transparent;
 }
 
@@ -1346,8 +1372,9 @@ display: none;
   border: none;
   outline: none;
 }
+
 #searchBox::placeholder {
- font-size: 2rem;
+  font-size: 2rem;
 }
 
 #cross {
@@ -1360,7 +1387,7 @@ display: none;
   color: #000000;
 }
 
-#popUp{
+#popUp {
   display: none;
   height: 80vh;
   width: 86%;
@@ -1371,9 +1398,12 @@ display: none;
 .welcome-container {
   background: linear-gradient(to left, #3b0505df, #681818, #710a11);
   text-align: center;
-  opacity: 0; /* Initially hidden */
-  transform: scale(0.8); /* Slightly smaller scale */
-  animation: fadeInZoom 2s ease-in-out forwards; /* Animation */
+  opacity: 0;
+  /* Initially hidden */
+  transform: scale(0.8);
+  /* Slightly smaller scale */
+  animation: fadeInZoom 2s ease-in-out forwards;
+  /* Animation */
   height: 400px;
   align-content: center;
   border-radius: 30px;
@@ -1399,12 +1429,15 @@ display: none;
     opacity: 0;
     transform: scale(0.8);
   }
+
   50% {
     opacity: 0.5;
     transform: scale(1.05);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
   }
 }
+
